@@ -1,1 +1,1 @@
-C:\Developing Windows 10 Universal Apps\Demos\BBQRecipes - Compiled Binding\BBQRecipes\HowToBBQ.csproj;x86
+C:\Project\Developing-Windows-10-Universal-Apps\BBQRecipes - Compiled Binding\BBQRecipes\HowToBBQ.csproj;x86

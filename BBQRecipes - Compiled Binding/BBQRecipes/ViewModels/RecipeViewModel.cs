@@ -4,6 +4,7 @@ using Windows.ApplicationModel;
 using Windows.UI.Xaml.Navigation;
 using Newtonsoft.Json;
 
+
 namespace HowToBBQ.ViewModels
 {
     public class RecipeViewModel : Mvvm.ViewModelBase
@@ -101,6 +102,7 @@ namespace HowToBBQ.ViewModels
         public override void OnNavigatedTo(string parameter, NavigationMode mode, System.Collections.Generic.IDictionary<string, object> state)
         {
             Recipe = JsonConvert.DeserializeObject<BBQRecipe>(parameter);
+   
         }
 
         public Mvvm.Command GoBackCommand

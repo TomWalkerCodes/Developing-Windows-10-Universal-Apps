@@ -42,33 +42,33 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0" Margin="0,0,0,-1">
-                    <Image x:Name="BBQImage" Source="{x:Bind ViewModel.ImageSource, Mode=TwoWay}" Canvas.ZIndex="-3" Height="607" Margin="46,0,0,0" Stretch="UniformToFill" />
+                    <Image x:Name="BBQImage" Source="{x:Bind ViewModel.ImageSource}" Canvas.ZIndex="-3" Height="607" Margin="46,0,0,0" Stretch="UniformToFill" />
                     <Image x:Name="CameraImage" Source="{StaticResource CameraImageSource}" Canvas.ZIndex="-3" Height="593" Margin="46,0,0,0" Stretch="Fill"/>
                 </StackPanel>
                 <StackPanel Grid.Column="1"  Orientation="Vertical" >
                     <StackPanel Margin="50,50,50,25" HorizontalAlignment="Left">
                         <TextBlock Text="Name" FontSize="14"/>
-                        <TextBox Text="{x:Bind ViewModel.Name, Mode=TwoWay}" Width="625"/>
+                        <TextBox Text="{x:Bind ViewModel.Name}" Width="625"/>
                     </StackPanel>
                     <StackPanel Margin="50,0,50,25">
                         <TextBlock Text="Prep Time" FontSize="14" HorizontalAlignment="Left"/>
-                        <TextBox Text="{x:Bind ViewModel.PrepTime, Mode=TwoWay}" Margin="0,0,213,0"/>
+                        <TextBox Text="{x:Bind ViewModel.PrepTime}" Margin="0,0,213,0"/>
                     </StackPanel>
                     <StackPanel Margin="50,0,50,25">
                         <TextBlock Text="Total Time" FontSize="14"/>
-                        <TextBox Text="{x:Bind ViewModel.TotalTime, Mode=TwoWay}" Margin="0,0,211,0"/>
+                        <TextBox Text="{x:Bind ViewModel.TotalTime}" Margin="0,0,211,0"/>
                     </StackPanel>
                     <StackPanel Margin="50,0,50,25">
                         <TextBlock Text="Serves" FontSize="14"/>
-                        <TextBox Text="{x:Bind ViewModel.Serves, Mode=TwoWay}" Margin="0,0,209,0"/>
+                        <TextBox Text="{x:Bind ViewModel.Serves}" Margin="0,0,209,0"/>
                     </StackPanel>
                     <StackPanel Margin="50,0,50,25">
                         <TextBlock Text="Ingredients" FontSize="14"/>
-                        <TextBox Text="{x:Bind ViewModel.Ingredients, Mode=TwoWay}" Margin="0,0,207,0"/>
+                        <TextBox Text="{x:Bind ViewModel.Ingredients}" Margin="0,0,207,0"/>
                     </StackPanel>
                     <StackPanel Margin="50,0">
                         <TextBlock Text="Directions" FontSize="14" HorizontalAlignment="Left"/>
-                        <TextBox Text="{x:Bind ViewModel.Directions, Mode=TwoWay}" TextWrapping="Wrap" HorizontalAlignment="Left" Height="167" Width="636" RenderTransformOrigin="0.5,0.5"/>
+                        <TextBox Text="{x:Bind ViewModel.Directions}" TextWrapping="Wrap" HorizontalAlignment="Left" Height="167" Width="636" RenderTransformOrigin="0.5,0.5"/>
                     </StackPanel>
                 </StackPanel>
             </Grid>

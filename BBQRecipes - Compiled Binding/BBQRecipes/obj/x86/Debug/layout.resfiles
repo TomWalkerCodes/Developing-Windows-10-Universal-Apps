@@ -1,3 +1,4 @@
+WinMetadata\Windows.winmd
 Assets\Logo.scale-100.png
 Assets\SmallLogo.scale-100.png
 Assets\SplashScreen.scale-100.png
@@ -18,4 +19,3 @@ Images\SurfNTurfKebabs.jpg
 ApplicationInsights.config
 ApplicationInsights.config
 Properties\Default.rd.xml
-WinMetadata\Windows.winmd
