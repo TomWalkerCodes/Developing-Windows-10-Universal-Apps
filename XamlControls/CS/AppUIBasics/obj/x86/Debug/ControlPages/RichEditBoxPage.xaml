@@ -1,0 +1,97 @@
+﻿<!--
+//*********************************************************
+//
+// Copyright (c) Microsoft. All rights reserved.
+// THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF
+// ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY
+// IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR
+// PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
+//
+//*********************************************************
+-->
+<Page
+    x:Class="AppUIBasics.ControlPages.RichEditBoxPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppUIBasics.ControlPages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <local:ControlExample HeaderText="A simple text editor using RichEditBox." HorizontalContentAlignment="Stretch" VerticalAlignment="Top">
+        <RelativePanel Margin="0,0,0,20" HorizontalAlignment="Stretch">
+            <RelativePanel.Resources>
+                <Style TargetType="AppBarButton">
+                    <Setter Property="IsCompact" Value="True"/>
+                </Style>
+            </RelativePanel.Resources>
+            <AppBarButton x:ConnectionId='1' x:Name="openFileButton" Icon="OpenFile"                          ToolTipService.ToolTip="Open file"/>
+            <AppBarButton x:ConnectionId='2' Icon="Save"                          ToolTipService.ToolTip="Save file" RelativePanel.RightOf="openFileButton" Margin="8,0,0,0"/>
+
+            <AppBarButton x:ConnectionId='3' Icon="Bold"                          ToolTipService.ToolTip="Bold" RelativePanel.LeftOf="italicButton" Margin="0,0,8,0"/>
+            <AppBarButton x:ConnectionId='4' x:Name="italicButton" Icon="Italic"                            ToolTipService.ToolTip="Italic" RelativePanel.LeftOf="fontColorButton" Margin="0,0,8,0"/>
+            <AppBarButton x:ConnectionId='5' x:Name="fontColorButton" Icon="FontColor" ToolTipService.ToolTip="Font color" RelativePanel.AlignRightWithPanel="True">
+                <AppBarButton.Flyout>
+                    <Flyout>
+                        <Grid>
+                            <Grid.Resources>
+                                <Style TargetType="Rectangle">
+                                    <Setter Property="Width" Value="50"/>
+                                    <Setter Property="Height" Value="50"/>
+                                </Style>
+                            </Grid.Resources>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Button x:ConnectionId='7' x:Name="black"                          >
+                                <Button.Content>
+                                    <Rectangle Fill="Black"/>
+                                </Button.Content>
+                            </Button>
+                            <Button x:ConnectionId='8' x:Name="gray"                           Grid.Row="1">
+                                <Button.Content>
+                                    <Rectangle Fill="Gray"/>
+                                </Button.Content>
+                            </Button>
+                            <Button x:ConnectionId='9' x:Name="greenyellow"                           Grid.Column="1">
+                                <Button.Content>
+                                    <Rectangle Fill="GreenYellow"/>
+                                </Button.Content>
+                            </Button>
+                            <Button x:ConnectionId='10' x:Name="green"                           Grid.Row="1" Grid.Column="1">
+                                <Button.Content>
+                                    <Rectangle Fill="Green"/>
+                                </Button.Content>
+                            </Button>
+                            <Button x:ConnectionId='11' x:Name="blue"                           Grid.Column="2">
+                                <Button.Content>
+                                    <Rectangle Fill="Blue"/>
+                                </Button.Content>
+                            </Button>
+                            <Button x:ConnectionId='12' x:Name="red"                           Grid.Row="1" Grid.Column="2">
+                                <Button.Content>
+                                    <Rectangle Fill="Red"/>
+                                </Button.Content>
+                            </Button>
+
+                        </Grid>
+                    </Flyout>
+                </AppBarButton.Flyout>
+            </AppBarButton>
+
+            <RichEditBox x:ConnectionId='6' x:Name="editor" Height="200" RelativePanel.Below="openFileButton" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
+        </RelativePanel>
+        <local:ControlExample.Xaml>
+            <RichTextBlock>
+                <Paragraph>&lt;RichEditBox x:Name="editor" Height="200"/&gt;</Paragraph>
+            </RichTextBlock>
+        </local:ControlExample.Xaml>
+    </local:ControlExample>
+</Page>
+

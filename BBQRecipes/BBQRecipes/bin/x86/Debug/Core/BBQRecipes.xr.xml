@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.RootTypes>
+    <RootType FullName="BBQRecipes.Common.BootStrapper">
+      <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.ResourceDictionary" />
+    <RootType FullName="BBQRecipes.Converters.DateTimeFormatConverter" />
+    <RootType FullName="BBQRecipes.Converters.ValueWhenConverter">
+      <RootProperty Name="When" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="Otherwise" />
+    </RootType>
+    <RootType FullName="System.Boolean" />
+    <RootType FullName="Windows.UI.Xaml.Visibility" />
+    <RootType FullName="System.Int32" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="BBQRecipes.Views.MainPage" />
+  </Roots.RootTypes>
+</Roots>

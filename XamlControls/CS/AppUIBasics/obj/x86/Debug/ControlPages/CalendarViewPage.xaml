@@ -1,0 +1,69 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="AppUIBasics.ControlPages.CalendarViewPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppUIBasics.ControlPages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <RelativePanel>
+        <local:ControlExample x:ConnectionId='2' x:Name="Example1" HeaderText="A basic calendar view.">
+            <CalendarView x:ConnectionId='15' x:Name="Control1" SelectionMode="Single"
+                                                                                                            
+                                                                                                           
+                                                                                                        />
+        </local:ControlExample>
+
+        <local:ControlExample x:ConnectionId='3' x:Name="ExampleAccessories" HeaderText="Select different looks for the CalendarView">
+            <StackPanel Orientation="Horizontal">
+                <StackPanel>
+                    <CheckBox x:ConnectionId='7' x:Name="isGroupLabelVisible" Content="IsGroupLabelVisible" IsChecked="True" />
+                    <CheckBox x:ConnectionId='8' x:Name="isOutOfScopeEnabled" Content="IsOutOfScopeEnabled" IsChecked="True" />
+                    <ComboBox x:ConnectionId='9' x:Name="selectionMode" Header="SelectionMode"                                                   SelectedValue="Single">
+                        <x:String>None</x:String>
+                        <x:String>Single</x:String>
+                        <x:String>Multiple</x:String>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Margin="10,0,0,0">
+                    <ComboBox x:ConnectionId='4' x:Name="calendarIdentifier" Header="CalendarIdentifier" />
+                    <TextBox x:ConnectionId='5' x:Name="language" Text="en-US" Width="150" Header="Language" Margin="-18,6,0,6" />
+                    <Button x:ConnectionId='6' x:Name="setLanguage" Content="Set Language"                           />
+                </StackPanel>
+            </StackPanel>
+            <local:ControlExample.Xaml>
+                <RichTextBlock>
+                    <Paragraph>&lt;CalendarView SelectionMode="<Run x:ConnectionId='13'                                                         />" IsGroupLabelVisible="<Run x:ConnectionId='14'                                                                 />"</Paragraph>
+                    <Paragraph TextIndent="24">IsOutOfScopeEnabled="<Run x:ConnectionId='11'                                                                 />" Language="<Run x:ConnectionId='12'                                               />"</Paragraph>
+                    <Paragraph TextIndent="24">CalendarIdentifier="<Run x:ConnectionId='10'                                                         />"&gt;</Paragraph>
+                </RichTextBlock>
+            </local:ControlExample.Xaml>
+        </local:ControlExample>
+
+        <VisualStateManager.VisualStateGroups>
+            <!-- Visual states reflect the application's window size -->
+            <VisualStateGroup>
+                <VisualState x:ConnectionId='16' x:Name="WideLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="900" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Example1.(RelativePanel.RightOf)" Value="ExampleAccessories" />
+                        <Setter Target="Example1.Margin" Value="24,0,0,0" />
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:ConnectionId='17' x:Name="NarrowLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Example1.(RelativePanel.Below)" Value="ExampleAccessories" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </RelativePanel>
+</Page>
+

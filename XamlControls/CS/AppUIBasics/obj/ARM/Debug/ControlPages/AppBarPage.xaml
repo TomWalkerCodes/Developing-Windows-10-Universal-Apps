@@ -1,0 +1,72 @@
+﻿<!--
+//*********************************************************
+//
+// Copyright (c) Microsoft. All rights reserved.
+// THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF
+// ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY
+// IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR
+// PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
+//
+//*********************************************************
+-->
+<Page
+    x:Class="AppUIBasics.ControlPages.AppBarPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppUIBasics.ControlPages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" NavigationCacheMode="Disabled">
+
+    <Page.TopAppBar>
+        <AppBar x:ConnectionId='1' x:Name="topAppBar"                          
+                Background="Gray" Height="130" IsSticky="True" >
+            <ScrollViewer VerticalScrollMode="Disabled" VerticalScrollBarVisibility="Hidden" HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto"
+                                  Margin="0,20,0,0">
+                <StackPanel x:ConnectionId='2' x:Name="AppBarContentPanel" Orientation="Horizontal" HorizontalAlignment="Left">
+                    <StackPanel.ChildrenTransitions>
+                        <TransitionCollection>
+                            <AddDeleteThemeTransition/>
+                            <ReorderThemeTransition/>
+                        </TransitionCollection>
+                    </StackPanel.ChildrenTransitions>
+                    <StackPanel.Resources>
+                        <Style TargetType="Button">
+                            <Setter Property="Height" Value="90"/>
+                            <Setter Property="Width" Value="157"/>
+                        </Style>
+                    </StackPanel.Resources>
+                    <Button x:ConnectionId='3' Content="App bars" Tag="AppBars"                           />
+                    <Button x:ConnectionId='4' Content="Buttons" Tag="Buttons"                           />
+                    <Button x:ConnectionId='5' Content="Collections" Tag="Collections"                           />
+                    <Button x:ConnectionId='6' Content="Flyouts" Tag="Flyouts"                           />
+                    <Button x:ConnectionId='7' Content="Progress" Tag="Progress"                           />
+                    <Button x:ConnectionId='8' Content="Layout" Tag="Layout"                           />
+                    <Button x:ConnectionId='9' Content="Text" Tag="Text"                           />
+                    <Button x:ConnectionId='10' Content="Selection" Tag="Selection"                           />
+                </StackPanel>
+            </ScrollViewer>
+        </AppBar>
+    </Page.TopAppBar>
+
+    <RelativePanel>
+        <local:ControlExample x:ConnectionId='11' x:Name="Example1" HeaderText="Show or hide the top app bar programatically.">
+            <local:ControlExample.Example>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:ConnectionId='14' Content="Show app bar"                         />
+                    <Button x:ConnectionId='15' Content="Hide app bar"                           Margin="12,0,0,0"/>
+                </StackPanel>
+            </local:ControlExample.Example>
+        </local:ControlExample>
+
+        <local:ControlExample HeaderText="Add and remove app bar content programatically." RelativePanel.Below="Example1">
+            <local:ControlExample.Example>
+                <StackPanel Orientation="Horizontal">
+                    <Button x:ConnectionId='12' Content="Add Home button"                        />
+                    <Button x:ConnectionId='13' Content="Remove Home button"                            Margin="12,0,0,0"/>
+                </StackPanel>
+            </local:ControlExample.Example>
+        </local:ControlExample>
+    </RelativePanel>
+</Page>
+

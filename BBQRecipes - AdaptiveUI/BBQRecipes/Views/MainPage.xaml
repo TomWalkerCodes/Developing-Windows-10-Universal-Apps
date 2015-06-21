@@ -1,0 +1,173 @@
+﻿<Page
+    x:Class="HowToBBQ.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HowToBBQ.Views"
+    xmlns:vm="using:HowToBBQ.ViewModels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.DataContext>
+        <vm:MainViewModel/>
+    </Page.DataContext>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="WindowStates">
+                <VisualState x:Name="WideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1000"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Value="Visible" >
+                            <Setter.Target>
+                                <TargetPropertyPath/>
+                            </Setter.Target>
+                        </Setter>
+                        <Setter Value="Collasped" >
+                            <Setter.Target>
+                                <TargetPropertyPath/>
+                            </Setter.Target>
+                        </Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="NarrowState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Value="Visible" >
+                            <Setter.Target>
+                                <TargetPropertyPath/>
+                            </Setter.Target>
+                        </Setter>
+                        <Setter Value="Collasped" >
+                            <Setter.Target>
+                                <TargetPropertyPath/>
+                            </Setter.Target>
+                        </Setter>
+                    </VisualState.Setters>
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="scrollViewer">
+                            <DiscreteObjectKeyFrame KeyTime="0">
+                                <DiscreteObjectKeyFrame.Value>
+                                    <Visibility>Collapsed</Visibility>
+                                </DiscreteObjectKeyFrame.Value>
+                            </DiscreteObjectKeyFrame>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="RecipesListView">
+                            <DiscreteObjectKeyFrame KeyTime="0">
+                                <DiscreteObjectKeyFrame.Value>
+                                    <Visibility>Visible</Visibility>
+                                </DiscreteObjectKeyFrame.Value>
+                            </DiscreteObjectKeyFrame>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="MediumState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="720"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Value="Collasped" >
+                            <Setter.Target>
+                                <TargetPropertyPath/>
+                            </Setter.Target>
+                        </Setter>
+                        <Setter Value="Visble" >
+                            <Setter.Target>
+                                <TargetPropertyPath/>
+                            </Setter.Target>
+                        </Setter>
+                    </VisualState.Setters>
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="scrollViewer">
+                            <DiscreteObjectKeyFrame KeyTime="0">
+                                <DiscreteObjectKeyFrame.Value>
+                                    <Visibility>Collapsed</Visibility>
+                                </DiscreteObjectKeyFrame.Value>
+                            </DiscreteObjectKeyFrame>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="RecipesListView">
+                            <DiscreteObjectKeyFrame KeyTime="0">
+                                <DiscreteObjectKeyFrame.Value>
+                                    <Visibility>Visible</Visibility>
+                                </DiscreteObjectKeyFrame.Value>
+                            </DiscreteObjectKeyFrame>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer x:Name="scrollViewer" HorizontalScrollMode="Auto" 
+              HorizontalScrollBarVisibility="Auto"
+              VerticalScrollMode="Disabled"
+              VerticalScrollBarVisibility="Hidden"
+              Grid.Row="1" Margin="30,50,0,0" VerticalAlignment="Center">
+            <GridView x:Name="RecipesGridView" 
+                  ItemsSource="{Binding Recipes}" 
+                  SelectionMode="None" 
+                  HorizontalContentAlignment="Left" 
+                  Margin="30,0,0,0" 
+                  d:LayoutOverrides="LeftPosition, RightPosition">
+                <GridView.ItemContainerStyle>
+                    <Style TargetType="GridViewItem">
+                        <Setter Property="Width" Value="600"/>
+                        <Setter Property="Height" Value="Auto"/>
+                        <Setter Property="Margin" Value="20"/>
+                    </Style>
+                </GridView.ItemContainerStyle>
+                <GridView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Tapped="Item_Tapped">
+                            <Image Source="{Binding ImageSource}"/>
+                            <Border Background="#99000000" VerticalAlignment="Bottom">
+                                <TextBlock Grid.Column="1" Text="{Binding Name}"
+                				FontSize="30" Margin="10" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </ScrollViewer>
+        <ListView x:Name="RecipesListView" 
+                  ItemsSource="{Binding Recipes}" 
+                  SelectionMode="None" 
+                  Margin="30,30,0,50" Height="684"
+                  Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center"
+                 Visibility="Collapsed">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="Width" Value="300"/>
+                    <Setter Property="Height" Value="Auto"/>
+                    <Setter Property="Margin" Value="20"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Tapped="Item_Tapped">
+                        <Image Source="{Binding ImageSource}"/>
+                        <Border Background="#99000000" VerticalAlignment="Bottom">
+                            <TextBlock Grid.Column="1" Text="{Binding Name}"
+                				FontSize="15" Margin="10" VerticalAlignment="Center"/>
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Grid Grid.ColumnSpan="2" Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="34"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="pageTitle" Text="HowTo BBQ" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+        		IsHitTestVisible="false" TextWrapping="NoWrap" Margin="30,15,30,40" FontWeight="Bold" FontSize="64"/>
+        </Grid>
+    </Grid>
+</Page>

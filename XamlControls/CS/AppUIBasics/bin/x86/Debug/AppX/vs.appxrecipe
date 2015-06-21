@@ -1,0 +1,803 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>WIN-A1LFFG55MFE</Machine>
+    <WindowsUser>tinyt</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>4e40b53b-a412-4a90-a9f8-184ccfcb3a5a</PackageIdentityName>
+    <IntermediateOutputPath>C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\obj\x86\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>2E7C4792F357B01DC26937412EB22D4FE34585CDED2E3821EFED16DD9681B57C</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>c24040d5-c41a-4361-af92-96df4f69f1c2_1.0.0.0_x86__8wekyb3d8bbwe</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>c24040d5-c41a-4361-af92-96df4f69f1c2_8wekyb3d8bbwe!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>c24040d5-c41a-4361-af92-96df4f69f1c2</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-06-21T02:41:22.788</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\AppUIBasics.csproj.AppLocalNetFX.GenerateResource.Cache">
+      <PackagePath>AppUIBasics.csproj.AppLocalNetFX.GenerateResource.Cache</PackagePath>
+      <Modified>2015-06-20T20:08:34.961</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\AppUIBasics.exe">
+      <PackagePath>AppUIBasics.exe</PackagePath>
+      <Modified>2015-06-21T02:41:21.929</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\AppUIBasics.xr.xml">
+      <PackagePath>AppUIBasics.xr.xml</PackagePath>
+      <Modified>2015-06-20T20:08:30.039</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\AppBar.png">
+      <PackagePath>Assets\AppBar.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\AppBarButton.png">
+      <PackagePath>Assets\AppBarButton.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\AppBarSeparator.png">
+      <PackagePath>Assets\AppBarSeparator.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\AppBarToggleButton.png">
+      <PackagePath>Assets\AppBarToggleButton.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\AutoSuggestBox.png">
+      <PackagePath>Assets\AutoSuggestBox.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\badgelogo.scale-100.png">
+      <PackagePath>Assets\badgelogo.scale-100.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\badgelogo.scale-140.png">
+      <PackagePath>Assets\badgelogo.scale-140.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\badgelogo.scale-180.png">
+      <PackagePath>Assets\badgelogo.scale-180.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\Border.png">
+      <PackagePath>Assets\Border.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\Button.png">
+      <PackagePath>Assets\Button.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\CalendarView.png">
+      <PackagePath>Assets\CalendarView.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\Canvas.png">
+      <PackagePath>Assets\Canvas.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\CheckBox.png">
+      <PackagePath>Assets\CheckBox.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\cliff.jpg">
+      <PackagePath>Assets\cliff.jpg</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\ComboBox.png">
+      <PackagePath>Assets\ComboBox.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\CommandBar.png">
+      <PackagePath>Assets\CommandBar.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\ContentDialog.png">
+      <PackagePath>Assets\ContentDialog.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\contrast-black\Logo.scale-100.png">
+      <PackagePath>Assets\contrast-black\Logo.scale-100.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\contrast-black\SmallLogo.scale-100.png">
+      <PackagePath>Assets\contrast-black\SmallLogo.scale-100.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\contrast-black\SplashScreen.scale-100.png">
+      <PackagePath>Assets\contrast-black\SplashScreen.scale-100.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\contrast-black\storelogo.scale-100.png">
+      <PackagePath>Assets\contrast-black\storelogo.scale-100.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\contrast-black\widelogo.scale-100.png">
+      <PackagePath>Assets\contrast-black\widelogo.scale-100.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\contrast-white\Logo.scale-100.png">
+      <PackagePath>Assets\contrast-white\Logo.scale-100.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\contrast-white\SmallLogo.scale-100.png">
+      <PackagePath>Assets\contrast-white\SmallLogo.scale-100.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\contrast-white\SplashScreen.scale-100.png">
+      <PackagePath>Assets\contrast-white\SplashScreen.scale-100.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\contrast-white\storelogo.scale-100.png">
+      <PackagePath>Assets\contrast-white\storelogo.scale-100.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\contrast-white\widelogo.scale-100.png">
+      <PackagePath>Assets\contrast-white\widelogo.scale-100.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\DatePicker.png">
+      <PackagePath>Assets\DatePicker.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\fishes.wmv">
+      <PackagePath>Assets\fishes.wmv</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\FlipView.png">
+      <PackagePath>Assets\FlipView.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\Flyout.png">
+      <PackagePath>Assets\Flyout.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\grapes.jpg">
+      <PackagePath>Assets\grapes.jpg</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\Grid.png">
+      <PackagePath>Assets\Grid.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\GridView.png">
+      <PackagePath>Assets\GridView.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\HeroImage.PNG">
+      <PackagePath>Assets\HeroImage.PNG</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\Hub.png">
+      <PackagePath>Assets\Hub.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\HyperlinkButton.png">
+      <PackagePath>Assets\HyperlinkButton.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\Image.png">
+      <PackagePath>Assets\Image.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\InkCanvas.png">
+      <PackagePath>Assets\InkCanvas.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\ladybug.wmv">
+      <PackagePath>Assets\ladybug.wmv</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\ListBox.png">
+      <PackagePath>Assets\ListBox.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\ListView.png">
+      <PackagePath>Assets\ListView.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\MediaElement.png">
+      <PackagePath>Assets\MediaElement.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\MenuFlyout.png">
+      <PackagePath>Assets\MenuFlyout.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\ninegrid.gif">
+      <PackagePath>Assets\ninegrid.gif</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\PasswordBox.png">
+      <PackagePath>Assets\PasswordBox.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\Pivot.png">
+      <PackagePath>Assets\Pivot.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\ProgressBar.png">
+      <PackagePath>Assets\ProgressBar.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\ProgressRing.png">
+      <PackagePath>Assets\ProgressRing.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\RadioButton.png">
+      <PackagePath>Assets\RadioButton.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\rainier.jpg">
+      <PackagePath>Assets\rainier.jpg</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\RelativePanel.png">
+      <PackagePath>Assets\RelativePanel.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\RichEditBox.png">
+      <PackagePath>Assets\RichEditBox.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\RichTextBlock.png">
+      <PackagePath>Assets\RichTextBlock.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\ScrollViewer.png">
+      <PackagePath>Assets\ScrollViewer.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\SemanticZoom.png">
+      <PackagePath>Assets\SemanticZoom.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\SettingsFlyout.png">
+      <PackagePath>Assets\SettingsFlyout.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\Slices.png">
+      <PackagePath>Assets\Slices.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\Slices2.png">
+      <PackagePath>Assets\Slices2.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\Slider.png">
+      <PackagePath>Assets\Slider.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\SplitView.png">
+      <PackagePath>Assets\SplitView.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\StackPanel.png">
+      <PackagePath>Assets\StackPanel.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\sunset.jpg">
+      <PackagePath>Assets\sunset.jpg</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\TextBlock.png">
+      <PackagePath>Assets\TextBlock.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\TextBox.png">
+      <PackagePath>Assets\TextBox.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\TimePicker.png">
+      <PackagePath>Assets\TimePicker.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\ToggleButton.png">
+      <PackagePath>Assets\ToggleButton.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\ToggleSwitch.png">
+      <PackagePath>Assets\ToggleSwitch.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\ToolTip.png">
+      <PackagePath>Assets\ToolTip.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\treetops.jpg">
+      <PackagePath>Assets\treetops.jpg</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\valley.jpg">
+      <PackagePath>Assets\valley.jpg</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\VariableSizedWrapGrid.png">
+      <PackagePath>Assets\VariableSizedWrapGrid.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\ViewBox.png">
+      <PackagePath>Assets\ViewBox.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\widelogo.scale-100.png">
+      <PackagePath>Assets\widelogo.scale-100.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\widelogo.scale-140.png">
+      <PackagePath>Assets\widelogo.scale-140.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\widelogo.scale-180.png">
+      <PackagePath>Assets\widelogo.scale-180.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Assets\WideLogo.scale-80.png">
+      <PackagePath>Assets\WideLogo.scale-80.png</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\ClrCompression.dll">
+      <PackagePath>ClrCompression.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\CoreRuntime\AppUIBasics.exe">
+      <PackagePath>CoreRuntime\AppUIBasics.exe</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\DataModel\ControlInfoData.json">
+      <PackagePath>DataModel\ControlInfoData.json</PackagePath>
+      <Modified>2015-06-19T18:37:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Internal.Net.dll">
+      <PackagePath>Internal.Net.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Internal.Uri.dll">
+      <PackagePath>Internal.Uri.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Microsoft.CSharp.dll">
+      <PackagePath>Microsoft.CSharp.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Microsoft.VisualBasic.dll">
+      <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\Microsoft.Win32.Primitives.dll">
+      <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-06-21T02:41:24.137</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.AppContext.dll">
+      <PackagePath>System.AppContext.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Collections.Concurrent.dll">
+      <PackagePath>System.Collections.Concurrent.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Collections.dll">
+      <PackagePath>System.Collections.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Collections.NonGeneric.dll">
+      <PackagePath>System.Collections.NonGeneric.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Collections.Specialized.dll">
+      <PackagePath>System.Collections.Specialized.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.ComponentModel.Annotations.dll">
+      <PackagePath>System.ComponentModel.Annotations.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.ComponentModel.dll">
+      <PackagePath>System.ComponentModel.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.ComponentModel.EventBasedAsync.dll">
+      <PackagePath>System.ComponentModel.EventBasedAsync.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.ComponentModel.Primitives.dll">
+      <PackagePath>System.ComponentModel.Primitives.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.ComponentModel.TypeConverter.dll">
+      <PackagePath>System.ComponentModel.TypeConverter.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Console.dll">
+      <PackagePath>System.Console.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Core.dll">
+      <PackagePath>System.Core.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Data.Common.dll">
+      <PackagePath>System.Data.Common.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Diagnostics.Contracts.dll">
+      <PackagePath>System.Diagnostics.Contracts.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Diagnostics.Debug.dll">
+      <PackagePath>System.Diagnostics.Debug.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Diagnostics.Tools.dll">
+      <PackagePath>System.Diagnostics.Tools.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Diagnostics.Tracing.dll">
+      <PackagePath>System.Diagnostics.Tracing.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.dll">
+      <PackagePath>System.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Dynamic.Runtime.dll">
+      <PackagePath>System.Dynamic.Runtime.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Globalization.Calendars.dll">
+      <PackagePath>System.Globalization.Calendars.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Globalization.dll">
+      <PackagePath>System.Globalization.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Globalization.Extensions.dll">
+      <PackagePath>System.Globalization.Extensions.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.IO.Compression.dll">
+      <PackagePath>System.IO.Compression.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.IO.Compression.ZipFile.dll">
+      <PackagePath>System.IO.Compression.ZipFile.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.IO.dll">
+      <PackagePath>System.IO.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.IO.FileSystem.dll">
+      <PackagePath>System.IO.FileSystem.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.IO.FileSystem.Primitives.dll">
+      <PackagePath>System.IO.FileSystem.Primitives.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.IO.IsolatedStorage.dll">
+      <PackagePath>System.IO.IsolatedStorage.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.IO.UnmanagedMemoryStream.dll">
+      <PackagePath>System.IO.UnmanagedMemoryStream.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Linq.dll">
+      <PackagePath>System.Linq.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Linq.Expressions.dll">
+      <PackagePath>System.Linq.Expressions.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Linq.Parallel.dll">
+      <PackagePath>System.Linq.Parallel.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Linq.Queryable.dll">
+      <PackagePath>System.Linq.Queryable.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Net.Http.dll">
+      <PackagePath>System.Net.Http.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Net.Http.Rtc.dll">
+      <PackagePath>System.Net.Http.Rtc.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Net.NetworkInformation.dll">
+      <PackagePath>System.Net.NetworkInformation.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Net.Primitives.dll">
+      <PackagePath>System.Net.Primitives.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Net.Requests.dll">
+      <PackagePath>System.Net.Requests.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Net.WebHeaderCollection.dll">
+      <PackagePath>System.Net.WebHeaderCollection.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.ObjectModel.dll">
+      <PackagePath>System.ObjectModel.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Private.DataContractSerialization.dll">
+      <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Private.Networking.dll">
+      <PackagePath>System.Private.Networking.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Private.ServiceModel.dll">
+      <PackagePath>System.Private.ServiceModel.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Reflection.Context.dll">
+      <PackagePath>System.Reflection.Context.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Reflection.DispatchProxy.dll">
+      <PackagePath>System.Reflection.DispatchProxy.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Reflection.dll">
+      <PackagePath>System.Reflection.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Reflection.Emit.dll">
+      <PackagePath>System.Reflection.Emit.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Reflection.Emit.ILGeneration.dll">
+      <PackagePath>System.Reflection.Emit.ILGeneration.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Reflection.Emit.Lightweight.dll">
+      <PackagePath>System.Reflection.Emit.Lightweight.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Reflection.Extensions.dll">
+      <PackagePath>System.Reflection.Extensions.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Reflection.Primitives.dll">
+      <PackagePath>System.Reflection.Primitives.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Reflection.TypeExtensions.dll">
+      <PackagePath>System.Reflection.TypeExtensions.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Resources.ResourceManager.dll">
+      <PackagePath>System.Resources.ResourceManager.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Resources.ResourceWriter.dll">
+      <PackagePath>System.Resources.ResourceWriter.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Runtime.Extensions.dll">
+      <PackagePath>System.Runtime.Extensions.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Runtime.Handles.dll">
+      <PackagePath>System.Runtime.Handles.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Runtime.InteropServices.dll">
+      <PackagePath>System.Runtime.InteropServices.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Runtime.InteropServices.WindowsRuntime.dll">
+      <PackagePath>System.Runtime.InteropServices.WindowsRuntime.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Runtime.Numerics.dll">
+      <PackagePath>System.Runtime.Numerics.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Runtime.Serialization.Json.dll">
+      <PackagePath>System.Runtime.Serialization.Json.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Runtime.Serialization.Primitives.dll">
+      <PackagePath>System.Runtime.Serialization.Primitives.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Runtime.Serialization.Xml.dll">
+      <PackagePath>System.Runtime.Serialization.Xml.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Runtime.WindowsRuntime.dll">
+      <PackagePath>System.Runtime.WindowsRuntime.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Runtime.WindowsRuntime.UI.Xaml.dll">
+      <PackagePath>System.Runtime.WindowsRuntime.UI.Xaml.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Security.Claims.dll">
+      <PackagePath>System.Security.Claims.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Security.Cryptography.DeriveBytes.dll">
+      <PackagePath>System.Security.Cryptography.DeriveBytes.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Security.Cryptography.Encoding.dll">
+      <PackagePath>System.Security.Cryptography.Encoding.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Security.Cryptography.Encryption.Aes.dll">
+      <PackagePath>System.Security.Cryptography.Encryption.Aes.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Security.Cryptography.Encryption.dll">
+      <PackagePath>System.Security.Cryptography.Encryption.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Security.Cryptography.Hashing.Algorithms.dll">
+      <PackagePath>System.Security.Cryptography.Hashing.Algorithms.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Security.Cryptography.Hashing.dll">
+      <PackagePath>System.Security.Cryptography.Hashing.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Security.Cryptography.RandomNumberGenerator.dll">
+      <PackagePath>System.Security.Cryptography.RandomNumberGenerator.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Security.Principal.dll">
+      <PackagePath>System.Security.Principal.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.ServiceModel.Duplex.dll">
+      <PackagePath>System.ServiceModel.Duplex.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.ServiceModel.Http.dll">
+      <PackagePath>System.ServiceModel.Http.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.ServiceModel.NetTcp.dll">
+      <PackagePath>System.ServiceModel.NetTcp.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.ServiceModel.Primitives.dll">
+      <PackagePath>System.ServiceModel.Primitives.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.ServiceModel.Security.dll">
+      <PackagePath>System.ServiceModel.Security.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Text.Encoding.CodePages.dll">
+      <PackagePath>System.Text.Encoding.CodePages.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Text.Encoding.dll">
+      <PackagePath>System.Text.Encoding.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Text.Encoding.Extensions.dll">
+      <PackagePath>System.Text.Encoding.Extensions.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Text.RegularExpressions.dll">
+      <PackagePath>System.Text.RegularExpressions.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Threading.dll">
+      <PackagePath>System.Threading.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Threading.Tasks.dll">
+      <PackagePath>System.Threading.Tasks.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Threading.Tasks.Parallel.dll">
+      <PackagePath>System.Threading.Tasks.Parallel.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Threading.Timer.dll">
+      <PackagePath>System.Threading.Timer.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Xml.ReaderWriter.dll">
+      <PackagePath>System.Xml.ReaderWriter.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Xml.XDocument.dll">
+      <PackagePath>System.Xml.XDocument.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Xml.XmlDocument.dll">
+      <PackagePath>System.Xml.XmlDocument.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Xml.XmlSerializer.dll">
+      <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Xml.XPath.dll">
+      <PackagePath>System.Xml.XPath.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Xml.XPath.XDocument.dll">
+      <PackagePath>System.Xml.XPath.XDocument.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\System.Xml.XPath.XmlDocument.dll">
+      <PackagePath>System.Xml.XPath.XmlDocument.dll</PackagePath>
+      <Modified>2015-04-18T04:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Developing Windows 10 Universal Apps\Demos\XamlControls\CS\AppUIBasics\bin\x86\Debug\Core\WinMetadata\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+      <Modified>2015-06-07T16:39:49.894</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\">
+      <Name>Microsoft.NET.CoreRuntime.1.0</Name>
+      <Version>1.0.22816.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.22816.1, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\.\AppX\x86\Microsoft.NET.CoreRuntime.1.0.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

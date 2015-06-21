@@ -1,0 +1,152 @@
+﻿<Page x:ConnectionId='1'
+    x:Name="pageRoot"
+    x:Class="AppUIBasics.SearchResultsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppUIBasics"
+    xmlns:common="using:AppUIBasics.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:AppUIBasics.Data"
+    mc:Ignorable="d"
+    d:ExtensionType="Search">
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the back button and page title
+        * Row 1 contains the rest of the page layout
+    -->
+    <RelativePanel Background="{ThemeResource ControlPageBackgroundBrush}">
+        <RelativePanel.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </RelativePanel.ChildrenTransitions>
+
+        <!-- Back button and page title -->
+        <local:PageHeader x:ConnectionId='2' x:Name="header" Title="Search" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" />
+
+        <!--
+            The body of the page in most view states uses an items controls to create multiple radio buttons
+            for filtering above a horizontal scrolling grid of search results
+        -->
+        <ScrollViewer x:ConnectionId='3' x:Name="filterItemContainer" 
+                      HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto" 
+                      VerticalScrollMode="Disabled" VerticalScrollBarVisibility="Hidden"
+                      RelativePanel.Below="header">
+            <ItemsControl x:ConnectionId='11'
+                    x:Name="filtersItemsControl"
+                    Canvas.ZIndex="1"
+                                                               
+                                                                                                                            >
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate                          >
+                        <Border x:ConnectionId='12'>
+                            <RadioButton x:ConnectionId='13'
+                                Margin="0,0,30,0"
+                                GroupName="Filters"
+                                                                        
+                                                        
+                                Style="{StaticResource TextBlockButtonStyle}">
+                                <TextBlock x:ConnectionId='14'                              TextWrapping="NoWrap"
+                                           Margin="3,-7,3,10" Style="{StaticResource SubtitleTextBlockStyle}" />
+                            </RadioButton>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <GridView x:ConnectionId='4'
+            x:Name="resultsGridView"
+            AutomationProperties.AutomationId="ResultsGridView"
+            AutomationProperties.Name="Search Results"
+            TabIndex="1"
+            SelectionMode="None"
+            IsSwipeEnabled="false"
+            IsItemClickEnabled="True"
+                                                       
+                                                  
+            RelativePanel.Below="filterItemContainer"
+            RelativePanel.AlignLeftWithPanel="True"
+            RelativePanel.AlignRightWithPanel="True">
+            <GridView.ItemContainerStyle>
+                <Style TargetType="GridViewItem">
+                    <Setter Property="HorizontalAlignment" Value="Left" />
+                    <Setter Property="Height" Value="110"/>
+                </Style>
+            </GridView.ItemContainerStyle>
+            <GridView.ItemTemplate>
+                <DataTemplate                                      >
+                    <Grid x:ConnectionId='7' Margin="5" Width="380">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Border Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}" 
+                                Width="60" Height="60">
+                            <Image x:ConnectionId='10'                             Stretch="Fill"/>
+                        </Border>
+                        <StackPanel Grid.Column="1" Margin="10,0,0,0">
+                            <TextBlock x:ConnectionId='8'                       TextWrapping="Wrap" Style="{StaticResource BaseTextBlockStyle}"/>
+                            <TextBlock x:ConnectionId='9'                          TextWrapping="Wrap" Style="{StaticResource BodyTextBlockStyle}" />
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+
+        <TextBlock x:ConnectionId='5'
+            x:Name="noResultsTextBlock"
+            Grid.Row="1"
+            Visibility="Collapsed"
+            Style="{StaticResource SubheaderTextBlockStyle}"
+            Text="No results match your search."
+            RelativePanel.Below="header"/>
+
+        <TextBox x:ConnectionId='6' x:Name="query"                                 RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.AlignRightWithPanel="True" />
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='15' x:Name="ResultStates">
+                <VisualState x:ConnectionId='18' x:Name="ResultsFound" />
+                <!-- When there are no results, the results panel is replaced with an informational TextBlock -->
+                <VisualState x:ConnectionId='19' x:Name="NoResultsFound">
+                    <VisualState.Setters>
+                        <Setter Target="resultsGridView.Visibility" Value="Collapsed" />
+                        <Setter Target="noResultsTextBlock.Visibility" Value="Visible" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+            <VisualStateGroup>
+                <VisualState x:ConnectionId='16' x:Name="WideLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="600" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="filterItemsControl.Margin" Value="24,24,24,0" />
+                        <Setter Target="resultsGridView.Margin" Value="24,24,24,35" />
+                        <Setter Target="noResultsTextBlock.Margin" Value="24,24,24,0" />
+                        <Setter Target="query.Visibility" Value="Collapsed" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='17' x:Name="NarrowLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="filterItemsControl.Margin" Value="12,12,12,0" />
+                        <Setter Target="filterItemsControl.FontSize" Value="12" />
+                        <Setter Target="resultsGridView.Margin" Value="12,12,12,30" />
+                        <Setter Target="noResultsTextBlock.Margin" Value="12,12,12,0" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </RelativePanel>
+</Page>
+

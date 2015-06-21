@@ -1,0 +1,7 @@
+Contrast=BLACK
+Contrast=WHITE
+Scale=100
+Scale=140
+Scale=180
+Scale=80
+Language=EN-US

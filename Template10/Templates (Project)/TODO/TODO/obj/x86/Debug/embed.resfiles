@@ -1,0 +1,6 @@
+App.xbf
+Controls\TodoItemEditor.xbf
+Controls\TodoListEditor.xbf
+Styles\Custom.xbf
+Styles\StarRadioButtonStyle.xbf
+Views\MainPage.xbf
